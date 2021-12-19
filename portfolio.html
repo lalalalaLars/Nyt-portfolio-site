@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>Portfolio</title>
+    </head>
+    <body class="portfolio">
+        
+            <div class="container-fluid">
+
+                <div id="navbar-portfolio" class="navbar fixed-top">
+                    <div class="logo">
+                        <svg viewbox="0 -13 1200 60">
+                            <a href="index.html"><text id="homebtn" x="0%" y="50%">Tag mig hjem</text>
+                            <use xlink:href="#homebtn" class="copy copy1"></use>
+                            <use xlink:href="#homebtn" class="copy copy2"></use>
+                            <use xlink:href="#homebtn" class="copy copy3"></use>
+                            <use xlink:href="#homebtn" class="copy copy4"></use></a>
+                        </svg>
+                    </div>
+                    <nav id="menu">
+                        <ul>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="studie.html">Studie</a></li>
+                            <li><a href="bio.html">Bio</a></li>
+                        </ul>
+                        <img src="images_and_videos/closing icon.png" class="close-icon" onclick="closemenu()">
+                    </nav>
+                    <img src="images_and_videos/Menu ikon.png" class="menu-icon" onclick="openmenu()">
+                </div>
+                
+                <div class="container gallery">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="images_and_videos/Sunerise.mp4" target="blank"><video id="videoT" class="traveling" loop muted src="images_and_videos/Sunerise.mp4"></video></a>
+                            <h3>Traveling Light</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="images_and_videos/Laser_phone.mp4" target="blank"><video id="videoL" class="laser" href="laserone.html" loop muted src="images_and_videos/Laser_phone.mp4"></video></a>
+                            <h3>Laser one</h3>
+                        </div>
+                    
+                        <div class="col-md-6">
+                            <a href="images_and_videos/Sweden.jpg" target="blank"><img src="images_and_videos/Sweden.jpg" alt="video"></a>
+                            <h3>Sweden</h3>
+                        </div>
+                        <div class="col-md-6">
+                           <a href="images_and_videos/Goldennugget.jpg" target="blank"><img src="images_and_videos/Goldennugget.jpg" alt="video"></a>
+                            <h3>Golden nugget</h3>
+                        </div>
+                    </div>
+
+                    
+                       
+                
+                
+                
+                
+               
+
+            </div>
+            <footer class="footer-portfolio">
+                <div class="kontakt">
+                    <a href="mailto:dalsgaard.work@gmail.com">Kontakt</a>
+                </div>
+                    <img src="images_and_videos/Copyright 2021 logo.png" alt="">
+            </footer>
+            
+
+                
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        
+        <script>
+            var menu = document.getElementById("menu");
+        
+            function closemenu(){
+        
+                menu.style.top= "-100vh";
+            }
+        
+            function openmenu(){
+        
+                menu.style.top= "0";
+            }
+            </script>
+        
+        <script>
+            document.querySelector(".laser").addEventListener("mouseover", function(){
+                this.play()
+            })
+            document.querySelector(".laser").addEventListener("mouseout", function(){
+                this.pause()
+            })
+            
+            document.querySelector(".traveling").addEventListener("mouseover", function(){
+                this.play()
+            })
+            document.querySelector(".traveling").addEventListener("mouseout", function(){
+                this.pause()
+            })
+        </script>
+    </body>
+</html>
